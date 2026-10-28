@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercise 6: Banh Mi, menus, and layout</title>
+
+    <!-- These are the embed codes for the two google fonts in our document, we will learn about google fonts next week -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" hef="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Ledger&display=swap" rel="stylesheet">
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 10px;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .container img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .container div {
+        background-color: #145CA3;
+        padding: 10px;
+        text-align: center, bottom;
+      }
+
+      .item {
+        background-color: #B7D7F6;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+
+      body {
+        font-family: "Century Gothic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #FAF0CA;
+        color: #F4D35E;
+      }
+
+      h1 {
+        font-weight: 70px;
+        color: #F95738;
+        text-align: center;
+        font-family: Papyrus, fantasy;
+      }
+
+      #title h1 {
+        font-size: 70px;
+        font-weight: 10px;
+        font-family: Jokerman, fantasy;
+      }
+
+      h2 {
+        font-weight: 500;
+        font-family: "Century Gothic", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: #CD6A13;
+      }
+
+      ul {
+        font-weight: 700;
+        font-family: "Papyrus", fantasy;
+        font-optical-sizing: auto;
+        font-style: normal;
+        color: #F4D35E;
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        text-decoration: none;
+        background-color: #1769B5;
+        color: white;
+      }
+
+      li a {
+        display: block;
+        color: #F4D35E;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #0D3B66;
+        color: white;
+      }
+
+      footer {
+        font-size: 20px;
+        text-align: center;
+        padding: 12px;
+        margin: 30px auto;
+        color: #CD6A13;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="title">
+      <h1>Greg’s Banh Mi</h1>
+    </div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <h2>At Greg’s Banh Mi, we’re serving up the perfect marriage of French and Vietnamese culinary traditions&mdash;crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavours that'll make your taste buds sing.</h2>
+
+    <div class="container">
+
+      <div class="item">
+        <img src="https://www.allrecipes.com/thmb/HTJHVC_LYKmXaMF54dhe2gZQkNI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/roasted-pork-banh-mi-vietnamese-sandwitch-ddmfs-3X4-0332-cfb4d2e149e7476ab2a2b4030c543f1b.jpg" alt="Classic Pork Banh Mi">
+        <h1>Classic Pork Banh Mi</h1>
+        <p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of p&acirc;t&eacute; on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
+      </div>
+
+      <div class="item">
+        <img src="https://asianinspirations.com.au/wp-content/uploads/2023/06/CBM-19.jpg" alt="Lemongrass Chicken Banh Mi">
+        <h1>Lemongrass Chicken Banh Mi</h1>
+        <p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalape&ntilde;os, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
+      </div>
+      <div class="item">
+        <img src="https://thenewbaguette.com/wp-content/uploads/2025/10/vegan-mushroom-tofu-banh-mi-40.jpg" alt="Tofu Banh Mi">
+        <h1>Tofu Banh Mi</h1>
+        <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
+      </div>
+      <div class="item">
+        <img src="https://www.foodandwine.com/thmb/F1iBAY2An5LyNEAtoKzEuVQ-5Sk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Five-spice-banh-mi-sandwiches-FT-RECIPE0624-947248f6e9344334a4815beb1e5a46ad.jpeg" alt="Five-Spice Beef Banh Mi">
+        <h1>Five-Spice Beef Banh Mi</h1>
+        <p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
+      </div>
+    </div>
+    <footer>
+      <p>Because life’s too short for boring sandwiches. Greg’s got you covered&mdash;one crispy baguette at a time.</p>
+    </footer>
+
+  </body>
+</html>
